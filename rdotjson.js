@@ -45,6 +45,7 @@ function rtojson(xml, options, callback) {
 
   var $ = cheerio.load(xml, {
     normalizeWhitespace: false,
+    decodeEntities: false,
     xmlMode: true
   });
 
